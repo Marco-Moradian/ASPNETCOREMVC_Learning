@@ -25,7 +25,7 @@ namespace FirstApplication_Version1
 
             // The following example adds support for controllers,
             // API - related features, and views, but not pages.The Web Application(MVC) template uses this code
-            services.AddControllersWithViews();
+            //services.AddControllersWithViews();
 
             // The following example adds support for Razor Pages and
             // minimal controller support.The Web Application template uses this code
@@ -34,7 +34,7 @@ namespace FirstApplication_Version1
             // The new methods can also be combined.
             // The following example is equivalent to calling AddMvc in ASP.NET Core 2.2
             //services.AddControllersWithViews();
-            //services.AddRazorPages();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,11 +62,11 @@ namespace FirstApplication_Version1
             {
                 //endpoints.MapControllers();
 
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                //endpoints.MapControllerRoute(
+                //    name: "default",
+                //    pattern: "{controller=Home}/{action=Index}/{id?}");
 
-                //endpoints.MapRazorPages();
+                endpoints.MapRazorPages();
             });
 
         }
