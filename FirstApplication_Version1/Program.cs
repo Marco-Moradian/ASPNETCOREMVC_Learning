@@ -15,7 +15,7 @@ namespace FirstApplication_Version1
         {
             CreateHostBuilder(args).Build().Run();
         }
-
+        //This function is used to run and setup the kerslar web server 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
